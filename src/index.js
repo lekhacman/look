@@ -1,7 +1,9 @@
 import './css/normalize.css';
-import './css/main.css';
 
 import '../vendor/modernizr-3.7.1.min';
 import '../vendor/plugins';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { AppContainer } from './containers/app.container';
 
-console.log('hello world!');
+ReactDOM.render(<AppContainer />, document.getElementById('root'));
