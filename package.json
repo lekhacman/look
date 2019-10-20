@@ -1,0 +1,93 @@
+{
+  "name": "look",
+  "version": "0.0.0",
+  "description": "html/css",
+  "scripts": {
+    "pretest": "eslint src",
+    "test": "jest",
+    "start": "parcel src/index.html"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "css": "^2.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "coveralls": "^3.0.5",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.0",
+    "parcel": "^1.12.4",
+    "prettier": "^1.18.2"
+  },
+  "author": {
+    "name": "Le Khac Man",
+    "email": "khacmanle@gmail.com",
+    "url": "https://lekhacman.github.io"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "engines": {
+    "npm": ">= 4.0.0",
+    "yarn": ">= 1.19.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "new-cap": "off",
+      "capitalized-comments": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "es5",
+          "singleQuote": true
+        }
+      ]
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "repository": "git@github.com:lekhacman/look.git",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "UNLICENSED"
+}

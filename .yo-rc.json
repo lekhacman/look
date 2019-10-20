@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Le Khac Man",
+      "authorEmail": "khacmanle@gmail.com",
+      "authorUrl": "https://lekhacman.github.io"
+    }
+  }
+}
