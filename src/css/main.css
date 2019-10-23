@@ -1,36 +1,20 @@
-h1 {
-  color: red;
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 150%;
+  font-size: 1.3em;
+}
+.container {
+  margin: 0.5in;
+  padding: 2em 1em;
+  border: 0.05em solid darkcyan;
+  border-radius: 50px 15px;
 }
 
-p, li {
-  color: green;
-}
-
-li {
-  list-style-type: square;
-}
-
-.special {
-  color: orange;
-  font-weight: bold;
-}
-
-li em {
-  color: rebeccapurple;
-}
-
-h1 + p {
-  font-size: 200%;
-}
-
-a:link {
-  color: pink;
-}
-
-a:visited {
-  color: green;
-}
-
-a:hover {
+a {
   text-decoration: none;
+}
+
+.article-body > p {
+  margin-top: 0.2em;
+  margin-bottom: 0;
 }
